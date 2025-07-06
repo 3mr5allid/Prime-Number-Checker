@@ -1,0 +1,12 @@
+def is_prime(n):
+    if n<=1:
+        return False
+    for nums in range(2, int(n**0.5)+1):
+        if n % nums==0:
+            return False
+    return True
+num= int(input("Entre The Number: "))
+if is_prime(num):
+    print ("The Number Is Prime")
+else :
+    print ("The Number Is Not Prime")
